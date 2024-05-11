@@ -20,7 +20,7 @@ export default function HairTest() {
     // Add more questions and options as needed
 ]);
   const [banner, setBanner] = useState('/assets/img/question/personal-profile-pic.png');
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(4);
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
@@ -45,7 +45,7 @@ export default function HairTest() {
   // const [selectedSubOption1, setSelectedSubOption1] = useState(null);
   const [showSubQuestions, setShowSubQuestions] = useState(false);
   const [showSubQuestions1, setShowSubQuestions1] = useState(false);
-
+console.log(selectedOptions4,'Stress')
 console.log(selectedOptionP,'fiajsoijasoijfoasij');
   const nextStep = () => setStep(step + 1);
   const prevStep = () => setStep(step - 1);

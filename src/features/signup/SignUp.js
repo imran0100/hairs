@@ -349,7 +349,7 @@ return () => clearInterval(countdownTimer);
         console.log(response1, 'jiji');
     
         if (response1.ok) {
-          alert.show('OTP sent Successfully !')
+          // alert.show('OTP sent Successfully !')
           setLoading(false)
           setShowOtpInput(true); // Display OTP input field after successfully sending OTP
           startTimer(); // Start the countdown timer
