@@ -53,7 +53,7 @@ const handleInput = (e) => {
           </label>
         </div>
         <div>
-          <img src="https://hairsncares.com/assets/img/banner/banner-2.png" />
+          <img alt='image' src="https://hairsncares.com/assets/img/banner/banner-2.png" />
         </div>
       </div>
       <div className="col-9">

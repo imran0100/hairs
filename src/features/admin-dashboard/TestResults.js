@@ -558,7 +558,7 @@ console.log(data12,"api data")
           <div className="options-container">
             {typeof question.option === 'object' ? (
               <label>
-                <img src={question.option.src} alt={question.option.name} />
+                <img alt='image' src={question.option.src} alt={question.option.name} />
                 <p>{question.option.name}</p>
               </label>
             ) : (
@@ -578,7 +578,7 @@ console.log(data12,"api data")
                   <div className="options-container">
                     {typeof subQuestion.option === 'object' ? (
                       <label>
-                        <img src={subQuestion.option.src} alt={subQuestion.option.name} />
+                        <img alt='image' src={subQuestion.option.src} alt={subQuestion.option.name} />
                         <p>{subQuestion.option.name}</p>
                       </label>
                     ) : (
@@ -606,7 +606,7 @@ console.log(data12,"api data")
           <div className="options-container">
             {typeof question.option === 'object' ? (
               <label>
-                <img src={question.option.src} alt={question.option.name} />
+                <img alt='image' src={question.option.src} alt={question.option.name} />
                 <p>{question.option.name}</p>
               </label>
             ) : (
@@ -626,7 +626,7 @@ console.log(data12,"api data")
                   <div className="options-container">
                     {typeof subQuestion.option === 'object' ? (
                       <label>
-                        <img src={subQuestion.option.src} alt={subQuestion.option.name} />
+                        <img alt='image' src={subQuestion.option.src} alt={subQuestion.option.name} />
                         <p>{subQuestion.option.name}</p>
                       </label>
                     ) : (
@@ -654,7 +654,7 @@ console.log(data12,"api data")
           <div className="options-container">
             {typeof question.option === 'object' ? (
               <label>
-                <img src={question.option.src} alt={question.option.name} />
+                <img alt='image' src={question.option.src} alt={question.option.name} />
                 <p>{question.option.name}</p>
               </label>
             ) : (
@@ -674,7 +674,7 @@ console.log(data12,"api data")
                   <div className="options-container">
                     {typeof subQuestion.option === 'object' ? (
                       <label>
-                        <img src={subQuestion.option.src} alt={subQuestion.option.name} />
+                        <img alt='image' src={subQuestion.option.src} alt={subQuestion.option.name} />
                         <p>{subQuestion.option.name}</p>
                       </label>
                     ) : (
@@ -702,7 +702,7 @@ console.log(data12,"api data")
           <div className="options-container">
             {typeof question.option === 'object' ? (
               <label>
-                <img src={question.option.src} alt={question.option.name} />
+                <img alt='image' src={question.option.src} alt={question.option.name} />
                 <p>{question.option.name}</p>
               </label>
             ) : (
@@ -722,7 +722,7 @@ console.log(data12,"api data")
                   <div className="options-container">
                     {typeof subQuestion.option === 'object' ? (
                       <label>
-                        <img src={subQuestion.option.src} alt={subQuestion.option.name} />
+                        <img alt='image' src={subQuestion.option.src} alt={subQuestion.option.name} />
                         <p>{subQuestion.option.name}</p>
                       </label>
                     ) : (

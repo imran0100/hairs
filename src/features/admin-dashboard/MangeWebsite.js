@@ -78,7 +78,7 @@ function ManageWebsite() {
                     </div>
                   </div>
                  <div className='Edit-Image'> <input type="file" accept="image/*" />
-                  <img className='hero-image' src='/uploads/admprhero-banner.png' alt='Hair Growth' /></div>
+                  <img alt='image' className='hero-image' src='/uploads/admprhero-banner.png' alt='Hair Growth' /></div>
                 </div>
               </div>
             </div>
@@ -124,8 +124,8 @@ function ManageWebsite() {
                     </div>
                   </div>
                   <div className='Edit-Image'> <input type="file" accept="image/*" />
-                  <img className='hero-image' src='/uploads/admprhero-banner-two.png' alt='Hair Growth' /></div>
-                  {/* <img className='hero-image' src='/uploads/admprhero-banner-two.png' alt='Hair Growth' /> */}
+                  <img alt='image' className='hero-image' src='/uploads/admprhero-banner-two.png' alt='Hair Growth' /></div>
+                  {/* <img alt='image' className='hero-image' src='/uploads/admprhero-banner-two.png' alt='Hair Growth' /> */}
                 </div>
               </div>
             </div>

@@ -67,7 +67,7 @@ function EditDeleteProduct() {
       
       {products.map((product, index) => (
         <div className="product-item" key={index}>
-          <img src={editMode === index ? editData.thumbnail : product.thumbnail} alt={product.name} />
+          <img alt='image' src={editMode === index ? editData.thumbnail : product.thumbnail} alt={product.name} />
           {editMode === index ? (
             <div className="edit-mode">
               <input

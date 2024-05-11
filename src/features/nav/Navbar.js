@@ -33,7 +33,7 @@ const navigate=useNavigate();
     <>
       <div className="nav-container container">
         <div>
-          <img
+          <img alt='image'
             alt="logo"
             className="nav-logo"
             src="/assets/img/logo.png"

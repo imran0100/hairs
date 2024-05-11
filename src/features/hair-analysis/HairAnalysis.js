@@ -5,7 +5,7 @@ export default function HairAnalysis() {
     const navigate=useNavigate()
   return (
     <div className='hair-analysis container'>
-        <div className='ana anakkk'><img src='\IMG_20240418_201628.png'/></div>
+        <div className='ana anakkk'><img alt='image' src='\IMG_20240418_201628.png'/></div>
         <div className='ana'>    
             <h1>Hair Analysis</h1>
             <p>Experience a new era of AI-driven hair analysis tool, in synergy with skilled dermatologists, delivering personalized solutions for your hair</p>

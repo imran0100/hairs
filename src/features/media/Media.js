@@ -13,22 +13,22 @@ function Media() {
             
         
         <div>
-            <img src='/uploads/logo2.png'/>
+            <img alt='image' src='/uploads/logo2.png'/>
             
             
         </div>
         <div>
-            <img src='/uploads/logo1.png'/>
+            <img alt='image' src='/uploads/logo1.png'/>
            
             
         </div>
         <div>
-            <img src='/uploads/logo3.png'/>
+            <img alt='image' src='/uploads/logo3.png'/>
           
             
         </div>
         <div>
-            <img src='/uploads/logo4.png'/>
+            <img alt='image' src='/uploads/logo4.png'/>
           
             
         </div>

@@ -88,7 +88,7 @@
 //             ) : (
 //               <label >
 //                 {option.src ? (
-//                   <img src={option.src} alt={option.name} />
+//                   <img alt='image' src={option.src} alt={option.name} />
 //                 ) : (
 //                   <div className="circle no-image option">{option.name}</div>
 //                 )}
@@ -199,7 +199,7 @@
 //               ) : (
 //                 <label>
 //                   {option.src ? (
-//                     <img src={option.src} alt={option.name} />
+//                     <img alt='image' src={option.src} alt={option.name} />
 //                   ) : (
 //                     <div className="circle no-image option">{option.name}</div>
 //                   )}
@@ -257,7 +257,7 @@
 //                             ) : (
 //                               <label>
 //                                 {subOption.src ? (
-//                                   <img src={subOption.src} alt={subOption.name} />
+//                                   <img alt='image' src={subOption.src} alt={subOption.name} />
 //                                 ) : (
 //                                   <div className="circle no-image option">{subOption.name}</div>
 //                                 )}
@@ -424,7 +424,7 @@ console.log(selectedOptions3,"fskj",selectedSubOptions);
                     ) : (
                       <label>
                         {option.src ? (
-                          <img src={option.src} alt={option.name} />
+                          <img alt='image' src={option.src} alt={option.name} />
                         ) : (
                           <div className="circle no-image option">{option.name}</div>
                         )}
@@ -484,7 +484,7 @@ console.log(selectedOptions3,"fskj",selectedSubOptions);
             ) : (
               <label>
                 {subOption.src ? (
-                  <img src={subOption.src} alt={subOption.name} />
+                  <img alt='image' src={subOption.src} alt={subOption.name} />
                 ) : (
                   <div className="circle no-image option">{subOption.name}</div>
                 )}

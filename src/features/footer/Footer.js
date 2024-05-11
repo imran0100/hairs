@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer-container container">
       <div className="footer-item">
-        <img src='/assets/img/footer-logo.png'/>
+        <img alt='image' src='/assets/img/footer-logo.png'/>
         <div className='icon-footer'>
             <FaMapMarkerAlt size={35}/>
             <p>HairsnCares.com, 101, Kane Plaza, Above Union Bank, Near Evershine Mall, Mindspace, Malad West, Mumbai, Maharashtra, 400064</p>

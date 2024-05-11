@@ -58,8 +58,8 @@
 //               </div>
 //             ) : (
 //               <label>
-//                 {/* <img src={option.src} alt={option.name} /> */}
-//                 {option.src?<img src={option.src} alt={option.name} />:<div className='circle no-image option'>{option.name}</div>}
+//                 {/* <img alt='image' src={option.src} alt={option.name} /> */}
+//                 {option.src?<img alt='image' src={option.src} alt={option.name} />:<div className='circle no-image option'>{option.name}</div>}
 //                 <p>{option.name}</p>
 //               </label>
 //             )}
@@ -212,7 +212,7 @@ export default function LifeStyle({ data, setBanner, showSubQuestions, setShowSu
               </div>
             ) : (
               <label>
-                {option.src ? <img src={option.src} alt={option.name} /> : <div className='circle no-image option'>{option.name}</div>}
+                {option.src ? <img alt='image' src={option.src} alt={option.name} /> : <div className='circle no-image option'>{option.name}</div>}
                 <p>{option.name}</p>
               </label>
             )}
@@ -233,7 +233,7 @@ export default function LifeStyle({ data, setBanner, showSubQuestions, setShowSu
                     </div>
                   ) : (
                     <label>
-                      {option.src ? <img src={option.src} alt={option.name} /> : <div className='circle no-image option'>{option.name}</div>}
+                      {option.src ? <img alt='image' src={option.src} alt={option.name} /> : <div className='circle no-image option'>{option.name}</div>}
                       <p>{option.name}</p>
                     </label>
                   )}

@@ -27,7 +27,7 @@ return (
       products?.map((product, index) => (
         <div className="product-item" key={index}>
           {/* <Link to={`/product-detail/${product.id}`} key={product.id}></Link> */}
-          <img src={product.thumbnail} alt={product.name} />
+          <img alt='image' src={product.thumbnail} alt={product.name} />
           <p>{product.title}</p>
           <p>${product.price}</p>
           <button onClick={()=>navigate(`/product-detail/${product.id}`)} className="btn primary prod-button">ADD TO CART</button>

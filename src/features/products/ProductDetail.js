@@ -42,7 +42,7 @@ function ProductDetail() {
       </div>
       <div className='container'>
         <div className='product-section'>
-          <div className='product-image'><img src={product?.thumbnail} alt={product?.title} /></div>
+          <div className='product-image'><img alt='image' src={product?.thumbnail} alt={product?.title} /></div>
           <div className='product-detail'>
             <h1>{product?.title}</h1>
             <p>{product?.description}</p>
@@ -64,7 +64,7 @@ function ProductDetail() {
         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
       </div>
       <div className='container'>
-        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFaQLv4xMAdfKo3N6F-5QgGB3sv0hkxxkGJRtdSB6DyA&s'/>
+        <img alt='image' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFaQLv4xMAdfKo3N6F-5QgGB3sv0hkxxkGJRtdSB6DyA&s'/>
       </div>
       <Product/>
       <ShoppingFeature/>

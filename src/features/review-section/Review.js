@@ -30,14 +30,14 @@ function Review() {
     <div className="review-container container">
       {data.map((item, index) =>
         <div key={index} className="review-card">
-          <img src={item.src} alt={item.name} />
+          <img alt='image' src={item.src} alt={item.name} />
           <p>Name: {item.name}</p>
           <p>Rating: {item.rating}</p>
           <p>{item.massage}</p>
           <p>Thank You</p>
 
           <div className="logo-container">
-            <img src={item.logo} alt="Google Logo" />
+            <img alt='image' src={item.logo} alt="Google Logo" />
             <span>12 Days ago</span>
           </div>
         </div>

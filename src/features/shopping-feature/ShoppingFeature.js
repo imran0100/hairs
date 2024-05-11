@@ -4,7 +4,7 @@ function ShoppingFeature() {
   return (
     <div className='shopping-feature container'>
         <div>
-            <img src='/uploads/shipping-icon1.png'/>
+            <img alt='image' src='/uploads/shipping-icon1.png'/>
             <div>
                 <p className='feature-heading'>FREE SHIPPING</p>
                 <p>All orders above 2999</p>
@@ -12,7 +12,7 @@ function ShoppingFeature() {
             
         </div>
         <div>
-            <img src='/uploads/shipping-icon2.png'/>
+            <img alt='image' src='/uploads/shipping-icon2.png'/>
             <div>
                 <p className='feature-heading'>15 DAYS RETURN</p>
                 <p>Money back Guarantee</p>
@@ -20,7 +20,7 @@ function ShoppingFeature() {
             
         </div>
         <div>
-            <img src='/uploads/shipping-icon3.png'/>
+            <img alt='image' src='/uploads/shipping-icon3.png'/>
             <div>
                 <p className='feature-heading'>SECURE CHECKOUT</p>
                 <p>Protected by paypal</p>
@@ -28,7 +28,7 @@ function ShoppingFeature() {
             
         </div>
         <div>
-            <img src='/uploads/shipping-icon4.png'/>
+            <img alt='image' src='/uploads/shipping-icon4.png'/>
             <div>
                 <p className='feature-heading'>GIFT COUPON</p>
                 <p>Assured gift</p>
