@@ -19,8 +19,8 @@ export default function HairTest() {
     { ques: 'Feeling Anxious/Depressed', option: '' },
     // Add more questions and options as needed
 ]);
-  const [banner, setBanner] = useState('https://hairsncares.com/assets/img/question/personal-profile-pic.png');
-  const [step, setStep] = useState(5);
+  const [banner, setBanner] = useState('/assets/img/question/personal-profile-pic.png');
+  const [step, setStep] = useState(1);
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
@@ -133,6 +133,7 @@ setBanner={setBanner}      />;
       case 6:
         stepContent = <UploadImage 
         setBanner={setBanner}
+        male={male}
         name={name}
         phoneNumber={phoneNumber}
         email={email}
@@ -169,7 +170,7 @@ console.log(selectedOptions,'s',selectedOptions1,'q');
           {stepContent}
         </div>
         <div className='test-image'>
-          <img alt='hair' src={banner} alt="Banner" />
+          <img  src={banner} alt="Banner" />
         </div>
       </div>
     </>
