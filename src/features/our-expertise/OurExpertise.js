@@ -13,7 +13,7 @@ export default function OurExpertise() {
       <h1 className="contect-us-heading">OUR EXPERTISE</h1>
     </div>
     <div className='iman'>
-      <img alt='image' src=".\images2\img_whatsapp_image.png" />
+      <img alt='hair' src=".\images2\img_whatsapp_image.png" />
     </div>
     <div className='tes-alig'>
       <h4 className="sub-had-2">HAVE EXPERT ADVICE FROM OUR</h4>
@@ -32,14 +32,14 @@ export default function OurExpertise() {
  <div className="our-expertise-section container">
         <div className="item-2">
       <div className='item-21'>
-        <img alt='image' src='\images2\img_admprcore_pic_1_png_4.png'/>
+        <img alt='hair' src='\images2\img_admprcore_pic_1_png_4.png'/>
         <h1 className='item-h1'>mhi hAIR tRANSPLANT</h1>
         <p>
 AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz  solutions for your hair</p>
       </div>
         </div>
         <div className="item-2">
-         <div className='item-21'> <img alt='image' src='\images2\img_admprcore_pic_1_png.png'/>
+         <div className='item-21'> <img alt='hair' src='\images2\img_admprcore_pic_1_png.png'/>
         <h1 className='item-h1'>mhi hAIR tRANSPLANT</h1>
         <p>
 AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz  solutions for your hair</p></div>
@@ -52,14 +52,14 @@ AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz 
  <div className="our-expertise-section container">
         <div className="item-2">
       <div className='item-21'>
-        <img alt='image' src='\images2\img_admprcore_pic_1_png_3.png'/>
+        <img alt='hair' src='\images2\img_admprcore_pic_1_png_3.png'/>
         <h1 className='item-h1'>v- Grow </h1>
         <p>
 AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz  solutions for your hair</p>
       </div>
         </div>
         <div className="item-2">
-         <div className='item-21'> <img alt='image' src='\images2\img_admprcore_pic_1_png_5.png'/>
+         <div className='item-21'> <img alt='hair' src='\images2\img_admprcore_pic_1_png_5.png'/>
         <h1 className='item-h1'>Biotin PRP</h1>
         <p>
 AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz  solutions for your hair</p></div>
@@ -68,14 +68,14 @@ AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz 
       <div className="our-expertise-section container">
         <div className="item-2">
       <div className='item-21'>
-        <img alt='image' src='\images2\img_admprcore_pic_1_png.png'/>
+        <img alt='hair' src='\images2\img_admprcore_pic_1_png.png'/>
         <h1 className='item-h1'>GFC PRP </h1>
         <p>
 AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz  solutions for your hair</p>
       </div>
         </div>
         <div className="item-2">
-         <div className='item-21'> <img alt='image' src='\images2\img_admprcore_pic_1_png_146x169.png'/>
+         <div className='item-21'> <img alt='hair' src='\images2\img_admprcore_pic_1_png_146x169.png'/>
         <h1 className='item-h1'>STEN CELL PRP</h1>
         <p>
 AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz  solutions for your hair</p></div>
@@ -84,14 +84,14 @@ AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz 
       <div className="our-expertise-section container">
         <div className="item-2">
       <div className='item-21'>
-        <img alt='image' src='\images2\img_admprcore_pic_1_png_1.png'/>
+        <img alt='hair' src='\images2\img_admprcore_pic_1_png_1.png'/>
         <h1 className='item-h1'>QR678 </h1>
         <p>
 AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz  solutions for your hair</p>
       </div>
         </div>
         <div className="item-2">
-         <div className='item-21'> <img alt='image' src='\images2\img_admprcore_pic_1_png_2.png'/>
+         <div className='item-21'> <img alt='hair' src='\images2\img_admprcore_pic_1_png_2.png'/>
         <h1 className='item-h1'>LASER GROW</h1>
         <p>
 AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz  solutions for your hair</p></div>
@@ -103,14 +103,14 @@ AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz 
   <div className="our-expertise-section container">
          <div className="item-2">
        <div className='item-21'>
-         <img alt='image' src='\images2\img_admprcore_pic_1_png_6.png'/>
+         <img alt='hair' src='\images2\img_admprcore_pic_1_png_6.png'/>
          <h1 className='item-h1'>V COVER</h1>
          <p>
  AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz  solutions for your hair</p>
        </div>
          </div>
          <div className="item-2">
-          <div className='item-21'> <img alt='image' src='\images2\img_admprcore_pic_1_png_7.png'/>
+          <div className='item-21'> <img alt='hair' src='\images2\img_admprcore_pic_1_png_7.png'/>
          <h1 className='item-h1'>V FIX</h1>
          <p>
  AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz  solutions for your hair</p></div>
@@ -119,7 +119,7 @@ AI-driven hair analysis tool, in  skilled dermatologists, delivering personaliz 
        
   </div>
   <div className='image-coverr'>
-    <img alt='image' src='\images2\img_hair_transplant.png'/>
+    <img alt='hair' src='\images2\img_hair_transplant.png'/>
   </div>
   <BeforeAfter />
   <Faq/>

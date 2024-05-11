@@ -68,7 +68,7 @@ export default function OurSpecialist() {
       </div>
       <div className="specialist-section-2 container">
         <div className="section-item">
-          <img alt='image' src="/uploads/admprsp-icon1.png" />
+          <img alt='hair' src="/uploads/admprsp-icon1.png" />
           <div className="sec-item">
             <h2>Experienced Team</h2>
             <p>
@@ -79,7 +79,7 @@ export default function OurSpecialist() {
           </div>
         </div>
         <div className="section-item">
-          <img alt='image' src="/uploads/admprsp-icon1.png" />
+          <img alt='hair' src="/uploads/admprsp-icon1.png" />
           <div className="sec-item">
             <h2>Hair Care Counselling:</h2>
             <p>
@@ -91,7 +91,7 @@ export default function OurSpecialist() {
           </div>
         </div>
         <div className="section-item">
-          <img alt='image' src="/uploads/admprsp-icon1.png" />
+          <img alt='hair' src="/uploads/admprsp-icon1.png" />
           <div className="sec-item">
             <h2>Award Winning Approach:</h2>
             <p>
@@ -101,7 +101,7 @@ export default function OurSpecialist() {
           </div>
         </div>
         <div className="section-item">
-          <img alt='image' src="/uploads/admprsp-icon1.png" />
+          <img alt='hair' src="/uploads/admprsp-icon1.png" />
           <div className="sec-item">
             <h2>Safe & Cost Effective:</h2>
             <p>
@@ -115,7 +115,7 @@ export default function OurSpecialist() {
       </div>
       <div className="specialist-section-3 container">
         <div className="sec-3">
-          <img alt='image' src="/uploads/doctor.jpg" />
+          <img alt='hair' src="/uploads/doctor.jpg" />
         </div>
         <div className="sec-3 sec-pad">
           <h3>Dr Amit Agarkar</h3>
@@ -169,7 +169,7 @@ export default function OurSpecialist() {
           <div className="col-lg-3">
             <h6>Awards</h6>
           </div>
-          <img alt='image' src="/assets/img/specialists/award.png" />
+          <img alt='hair' src="/assets/img/specialists/award.png" />
         </div>
       </div>
       <div className=' container'>
@@ -178,7 +178,7 @@ export default function OurSpecialist() {
         </div>
         <div className="doc-container">
             {doctors.map((item)=>
-            <div className="doctors"><div className="doc-image"><img alt='image' src={item.src}/></div>
+            <div className="doctors"><div className="doc-image"><img alt='hair' src={item.src}/></div>
             <div className="doc-detail"><h2>{item.name}</h2>
             <h2>{item.degree}</h2>
             <p>{item.decrip}</p></div>
@@ -192,24 +192,24 @@ export default function OurSpecialist() {
           <p>Our team of skilled hair care counselors is here to provide personalized advice and solutions for all your hair needs. With a deep understanding of various hair types and concerns</p>
         <div className="councellor-item">
           <div className="coun-item">
-            <img alt='image' src="/uploads/admprcoun-icon1.png"/>
+            <img alt='hair' src="/uploads/admprcoun-icon1.png"/>
             <p>Education & Confidence Boosting</p>
           </div>
        
           <div className="coun-item">
-            <img alt='image' src="/uploads/coun-icon2.png"/>
+            <img alt='hair' src="/uploads/coun-icon2.png"/>
             <p>Resut Assessment</p>
           </div>
           <div className="coun-item">
-            <img alt='image' src="/uploads/coun-icon3.png"/>
+            <img alt='hair' src="/uploads/coun-icon3.png"/>
             <p>Recommedation & Product Knowledge</p>
           </div>
           <div className="coun-item">
-            <img alt='image' src="/uploads/coun-icon4.png"/>
+            <img alt='hair' src="/uploads/coun-icon4.png"/>
             <p>Hair Health and Style Guiding</p>
           </div>
           <div className="coun-item">
-            <img alt='image' src="/uploads/coun-icon5.png"/>
+            <img alt='hair' src="/uploads/coun-icon5.png"/>
             <p>Regular Follow-Up</p>
           </div>
         </div>

@@ -9,7 +9,7 @@
 //     <>
 //     <div className="nav-container container">
 //       <div>
-//         <img alt='image'
+//         <img alt='hair'
 //           alt="logo"
 //           className="nav-logo"
 //           src="https://hairsncares.com/assets/img/logo.png"
@@ -97,7 +97,7 @@ export default function AdminNavbar({ children }) {
     <>
       <div className="nav-container container">
         <div>
-          <img alt='image'
+          <img alt='hair'
             alt="logo"
             className="nav-logo"
             src="/assets/img/logo.png"

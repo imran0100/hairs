@@ -24,7 +24,7 @@
 //                 return (
 //                   <div className="option circle">
 //                     {op.src ? (
-//                       <img alt='image' src={op.src} />
+//                       <img alt='hair' src={op.src} />
 //                     ) : (
 //                       <div className="circle">{op}</div>
 //                     )}
@@ -140,7 +140,7 @@ export default function PersonalProfile({ data,setMale,setSelectedOptionP, nextS
                     onClick={() => handleOptionSelect(index, opIndex)}
                   >
                     {op.src ? (
-                      <img alt='image' src={op.src} />
+                      <img alt='hair' src={op.src} />
                     ) : (
                       <div className="circle">{op}</div>
                     )}

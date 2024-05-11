@@ -13,7 +13,7 @@
 //                 <button className='btn'>BOOK AN APPOINTMENT </button>
 //             </div>
 //         </div>
-//         <div style={{height:"100%"}}><img alt='image' className='hero-image' src='https://hairsncares.com/uploads/admprhero-banner.png'></img></div>
+//         <div style={{height:"100%"}}><img alt='hair' className='hero-image' src='https://hairsncares.com/uploads/admprhero-banner.png'></img></div>
 //     </div>
 //    </div>
 //   )
@@ -43,7 +43,7 @@ function Hero() {
               <button onClick={()=>navigate('/book')} className='btn'>BOOK AN APPOINTMENT</button>
             </div>
           </div>
-          <img alt='image' className='hero-image' src='https://hairsncares.com/uploads/admprhero-banner.png' alt='Hair Growth' />
+          <img alt='hair' className='hero-image' src='https://hairsncares.com/uploads/admprhero-banner.png' alt='Hair Growth' />
         </div>
       </div>
   
@@ -62,7 +62,7 @@ function Hero() {
               <button onClick={()=>navigate('/book')} className='btn'>BOOK AN APPOINTMENT</button>
             </div>
           </div>
-          <img alt='image' className='hero-image' src='/uploads/admprhero-banner.png' alt='Hair Growth' />
+          <img alt='hair' className='hero-image' src='/uploads/admprhero-banner.png' alt='Hair Growth' />
         </div>
       </div>
   
@@ -81,7 +81,7 @@ function Hero() {
               <button onClick={()=>navigate('/book')} className='btn'>BOOK AN APPOINTMENT</button>
             </div>
           </div>
-          <img alt='image' className='hero-image' src='/uploads/admprhero-banner-two.png' alt='Hair Growth' />
+          <img alt='hair' className='hero-image' src='/uploads/admprhero-banner-two.png' alt='Hair Growth' />
         </div>
       </div>
   

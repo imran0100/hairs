@@ -557,7 +557,7 @@ export default function PatientTestResult() {
           <div className="options-container">
             {typeof question.option === 'object' ? (
               <label>
-                <img alt='image' src={question.option.src} alt={question.option.name} />
+                <img alt='hair' src={question.option.src} alt={question.option.name} />
                 <p>{question.option.name}</p>
               </label>
             ) : (
@@ -577,7 +577,7 @@ export default function PatientTestResult() {
                   <div className="options-container">
                     {typeof subQuestion.option === 'object' ? (
                       <label>
-                        <img alt='image' src={subQuestion.option.src} alt={subQuestion.option.name} />
+                        <img alt='hair' src={subQuestion.option.src} alt={subQuestion.option.name} />
                         <p>{subQuestion.option.name}</p>
                       </label>
                     ) : (
@@ -605,7 +605,7 @@ export default function PatientTestResult() {
           <div className="options-container">
             {typeof question.option === 'object' ? (
               <label>
-                <img alt='image' src={question.option.src} alt={question.option.name} />
+                <img alt='hair' src={question.option.src} alt={question.option.name} />
                 <p>{question.option.name}</p>
               </label>
             ) : (
@@ -625,7 +625,7 @@ export default function PatientTestResult() {
                   <div className="options-container">
                     {typeof subQuestion.option === 'object' ? (
                       <label>
-                        <img alt='image' src={subQuestion.option.src} alt={subQuestion.option.name} />
+                        <img alt='hair' src={subQuestion.option.src} alt={subQuestion.option.name} />
                         <p>{subQuestion.option.name}</p>
                       </label>
                     ) : (
@@ -653,7 +653,7 @@ export default function PatientTestResult() {
           <div className="options-container">
             {typeof question.option === 'object' ? (
               <label>
-                <img alt='image' src={question.option.src} alt={question.option.name} />
+                <img alt='hair' src={question.option.src} alt={question.option.name} />
                 <p>{question.option.name}</p>
               </label>
             ) : (
@@ -673,7 +673,7 @@ export default function PatientTestResult() {
                   <div className="options-container">
                     {typeof subQuestion.option === 'object' ? (
                       <label>
-                        <img alt='image' src={subQuestion.option.src} alt={subQuestion.option.name} />
+                        <img alt='hair' src={subQuestion.option.src} alt={subQuestion.option.name} />
                         <p>{subQuestion.option.name}</p>
                       </label>
                     ) : (
@@ -701,7 +701,7 @@ export default function PatientTestResult() {
           <div className="options-container">
             {typeof question.option === 'object' ? (
               <label>
-                <img alt='image' src={question.option.src} alt={question.option.name} />
+                <img alt='hair' src={question.option.src} alt={question.option.name} />
                 <p>{question.option.name}</p>
               </label>
             ) : (
@@ -721,7 +721,7 @@ export default function PatientTestResult() {
                   <div className="options-container">
                     {typeof subQuestion.option === 'object' ? (
                       <label>
-                        <img alt='image' src={subQuestion.option.src} alt={subQuestion.option.name} />
+                        <img alt='hair' src={subQuestion.option.src} alt={subQuestion.option.name} />
                         <p>{subQuestion.option.name}</p>
                       </label>
                     ) : (

@@ -10,7 +10,7 @@ function BookAppointment() {
             <h1 className="contect-us-heading">CONTACT US</h1>
           </div>
           <div>
-            <img alt='image' src="https://hairsncares.com/assets/img/contact/conctact-banner.png" />
+            <img alt='hair' src="https://hairsncares.com/assets/img/contact/conctact-banner.png" />
           </div>
           <div>
             <h4 className="sub-had-2">HAVE QUESTIONS OR FEEDBACK?</h4>
@@ -52,7 +52,7 @@ function BookAppointment() {
         <div>
           <h2>How it works</h2>
           <figure className="text-center">
-            <img alt='image' src="/assets/img/contact/howitwork.jpg" />
+            <img alt='hair' src="/assets/img/contact/howitwork.jpg" />
           </figure>
           <p className="text-list">
             <span>01</span>Complete online Hair test
@@ -74,7 +74,7 @@ function BookAppointment() {
         <h2>Get in touch</h2>
         <div className="touch-container">
           <div className="touch">
-            <img alt='image' src="https://hairsncares.com/assets/img/icons/location.png" />
+            <img alt='hair' src="https://hairsncares.com/assets/img/icons/location.png" />
             <div className="c-content">
               <h4>HairsNCares</h4>
               <p>
@@ -84,14 +84,14 @@ function BookAppointment() {
             </div>
           </div>
           <div className="touch">
-            <img alt='image' src="https://hairsncares.com/assets/img/icons/contact-icon.png" />
+            <img alt='hair' src="https://hairsncares.com/assets/img/icons/contact-icon.png" />
             <div className="c-content">
               <h4>+91 9136028327</h4>
               <p>hairsncares@gmail.com</p>
             </div>
           </div>
           <div className="touch">
-            <img alt='image' src="https://hairsncares.com/assets/img/icons/time.png" />
+            <img alt='hair' src="https://hairsncares.com/assets/img/icons/time.png" />
             <div className="c-content">
               <h4>Mon - Fri: 9AM - 7PM</h4>
               <p>Sat - Sun: 11AM - 4PM</p>

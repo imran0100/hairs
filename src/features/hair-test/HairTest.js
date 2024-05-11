@@ -169,7 +169,7 @@ console.log(selectedOptions,'s',selectedOptions1,'q');
           {stepContent}
         </div>
         <div className='test-image'>
-          <img alt='image' src={banner} alt="Banner" />
+          <img alt='hair' src={banner} alt="Banner" />
         </div>
       </div>
     </>

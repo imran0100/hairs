@@ -4,9 +4,9 @@ function RxBlueprint() {
   return (
     <div className='rx-container container'>
         <div><h2>Hair Rx blueprint</h2>
-        <img alt='image' src='/assets/img/home/blueprint-pic1.png'/>
+        <img alt='hair' src='/assets/img/home/blueprint-pic1.png'/>
         </div>
-        <div><img alt='image' src='/assets/img/home/rx-question.png'/></div>
+        <div><img alt='hair' src='/assets/img/home/rx-question.png'/></div>
 
     </div>
   )

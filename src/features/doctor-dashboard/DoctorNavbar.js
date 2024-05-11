@@ -6,7 +6,7 @@ export default function DoctorNavbar({children}) {
     <>
     <div className="nav-container container">
       <div>
-        <img alt='image'
+        <img alt='hair'
           alt="logo"
           className="nav-logo"
           src="/assets/img/logo.png"

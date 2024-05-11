@@ -14,7 +14,7 @@ export default function About() {
               <h1 className="contect-us-heading">ABOUT US</h1>
             </div>
             <div>
-              <img alt='image' src="/assets/img/about/about-banner.png" />
+              <img alt='hair' src="/assets/img/about/about-banner.png" />
             </div>
             <div>
               <h4 className="sub-had-2">HAVE EXPERT ADVICE FROM OUR</h4>
@@ -44,7 +44,7 @@ export default function About() {
           </p>
         </div>
         <div className="image-2">
-          <img alt='image' src="\IMG_20240425_085350.jpg" />
+          <img alt='hair' src="\IMG_20240425_085350.jpg" />
         </div>
       </div>
       <div className="section-3-wrapper">
@@ -54,7 +54,7 @@ export default function About() {
           </div>
           <div className="content-3">
             <div className="content-container">
-              <img alt='image' src="\IMG_20240425_100125.png" />
+              <img alt='hair' src="\IMG_20240425_100125.png" />
             </div>
             <div className="content-container-2">
               <div className="content-item">
@@ -123,7 +123,7 @@ export default function About() {
       </div>
       <div className="about-container-3 container">
         <div className="container-3-item">
-          <img alt='image' src="/uploads/approach.png" />
+          <img alt='hair' src="/uploads/approach.png" />
         </div>
         <div className="container-3-item">
           <h1>Our Comprehensive Approach</h1>
@@ -157,7 +157,7 @@ export default function About() {
         <div className="about-4-items">
           <div className="items-con">
             <div className="circle-4">
-              <img alt='image' src="/uploads/admprcore-pic-1.png" />
+              <img alt='hair' src="/uploads/admprcore-pic-1.png" />
             </div>
             <div className="circle-conta">
               <button>Modern Medicine</button>
@@ -174,7 +174,7 @@ export default function About() {
           </div>
           <div className="items-con">
             <div className="circle-4">
-              <img alt='image' src="/uploads/admprcore-pic-3.png" />
+              <img alt='hair' src="/uploads/admprcore-pic-3.png" />
             </div>
             <div className="circle-conta">
               <button className="circle-4">Diet</button>
@@ -189,7 +189,7 @@ export default function About() {
           </div>
           <div className="items-con">
             <div className="circle-4">
-              <img alt='image' src="/uploads/admprcore-pic-2.png" />
+              <img alt='hair' src="/uploads/admprcore-pic-2.png" />
             </div>
             <div className="circle-conta">
               <button>Healthy Lifestyle</button>
@@ -206,7 +206,7 @@ export default function About() {
           </div>
           <div className="items-con">
             <div className="circle-4">
-              <img alt='image' src="/uploads/core-pic-4.png" />
+              <img alt='hair' src="/uploads/core-pic-4.png" />
             </div>
             <div className="circle-conta">
               <button>Stress Management</button>
@@ -257,7 +257,7 @@ export default function About() {
             <div className="commit-item">
               <div>
                 <div className="commit-sub">
-                  <img alt='image' src="/assets/img/about/vission.png" />
+                  <img alt='hair' src="/assets/img/about/vission.png" />
                   <h2>Our Vision</h2>
                 </div>
                 <p>
@@ -272,7 +272,7 @@ export default function About() {
               <div>
                 {" "}
                 <div className="commit-sub">
-                  <img alt='image' src="/assets/img/about/mission.png" />
+                  <img alt='hair' src="/assets/img/about/mission.png" />
                   <h2>Our Goal</h2>
                 </div>{" "}
                 <p>

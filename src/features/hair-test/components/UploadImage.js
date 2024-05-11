@@ -76,7 +76,7 @@ useEffect(()=>setBanner("/assets/img/SELF-HAIR-ANALYSIS-TEST-female.jpg"),[])
       <div className="modal-content">
         <div className="successicon">
           <div className="text-center">
-            <img alt='image' src="/assets/img/thumb.png" alt="Thumb Icon" />
+            <img alt='hair' src="/assets/img/thumb.png" alt="Thumb Icon" />
           </div>
           <p>
             <b>Awesome, A big thank you for answering all your questions patiently!</b>
@@ -93,7 +93,7 @@ useEffect(()=>setBanner("/assets/img/SELF-HAIR-ANALYSIS-TEST-female.jpg"),[])
         <div className="upload-img text-center" style={{ margin: '15px 0' }}>
         {/* /assets/img/uploadpic.jpg */}
         {/* male */}
-          <img alt='image' src="/assets/img/femaleupload.jpg" alt="Upload Image" />
+          <img alt='hair' src="/assets/img/femaleupload.jpg" alt="Upload Image" />
         </div>
         <h5 className="modal-title mb-3" id="exampleModalLabel">Upload Your Scalp Image</h5>
         <form id="fileUploadForm" encType="multipart/form-data" method="post">

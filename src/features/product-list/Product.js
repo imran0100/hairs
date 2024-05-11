@@ -45,7 +45,7 @@ navigate("/shop")
     
     {data.map((item, index) =>
       <div key={index} className="product-card">
-        <img alt='image' src={item.src} alt={item.name} />
+        <img alt='hair' src={item.src} alt={item.name} />
         <p>{item.name}</p>
         <p>Rating: {item.rating}</p>
         <p>{item.massage}</p>
