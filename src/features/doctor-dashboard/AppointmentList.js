@@ -23,7 +23,7 @@ console.log();
   const navigate=useNavigate()
   return (
     <DoctorNavbar>
-     {storedDrData._id===storedUserData.logedInUser.user._id ? <div className="appointment-container">
+     { storedDrData?._id===storedUserData.logedInUser?.user?._id ? <div className="appointment-container">
         {appointmentData.map(appointment => (
           <div key={appointment.id} className="appointment-item">
             <div className="appointment-details">
