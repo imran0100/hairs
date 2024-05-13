@@ -505,7 +505,7 @@ export default function PatientTestResult() {
             const response = await fetch(`${BASE_URL}/hair-tests/gethairtest-detail`, {
               method: 'GET',
               headers: {
-                'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjIzMDc1YzBhMWM2OWFmMGNlNjJhOTQiLCJpYXQiOjE3MTUzMjMwNDAsImV4cCI6MTcxNTU4MjI0MH0.r9F4CceXrSWoPtDixLMHeTPJnzmrAD24YSj9DNd83G4'
+                'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjIzMDc1YzBhMWM2OWFmMGNlNjJhOTQiLCJpYXQiOjE3MTU1NDEwOTMsImV4cCI6MTcxNTgwMDI5M30.HVQdT_y6vtTEmy-QoChIOUaMX4Ml2vJI9-C5vkHFawU'
               }
             });
     
