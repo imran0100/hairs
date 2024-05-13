@@ -172,7 +172,32 @@
     display: block;
     margin-bottom: 5px;
   }
-  
+  .dr-select{
+    text-align: end;
+    flex: auto;
+    width: 40%;
+   
+  }
+  .dr-select select{
+    display: inline;
+    width: 7.5rem;
+    max-width: 100%;
+    margin-left: 1rem;
+    padding: .2rem;
+    margin-top: .3rem;
+  }
+  .dr-select button{
+    margin-top: .5rem;
+    border: none;
+    background: #0b980b;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+  }
+  .dr-select button:hover{
+    cursor: pointer;
+    background: #0c600c;
+  }
   .form-group input,
   .form-group textarea {
     width: 100%;

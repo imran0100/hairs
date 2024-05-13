@@ -212,7 +212,7 @@ export default function LifeStyle({ data, setBanner, showSubQuestions, setShowSu
               </div>
             ) : (
               <label>
-                {option.src ? <img alt='hair' src={option.src} alt={option.name} /> : <div className='circle no-image option'>{option.name}</div>}
+                {option.src ? <img  src={option.src} alt={option.name} /> : <div className='circle no-image option'>{option.name}</div>}
                 <p>{option.name}</p>
               </label>
             )}
@@ -233,7 +233,7 @@ export default function LifeStyle({ data, setBanner, showSubQuestions, setShowSu
                     </div>
                   ) : (
                     <label>
-                      {option.src ? <img alt='hair' src={option.src} alt={option.name} /> : <div className='circle no-image option'>{option.name}</div>}
+                      {option.src ? <img  src={option.src} alt={option.name} /> : <div className='circle no-image option'>{option.name}</div>}
                       <p>{option.name}</p>
                     </label>
                   )}
@@ -256,7 +256,7 @@ export default function LifeStyle({ data, setBanner, showSubQuestions, setShowSu
         <button onClick={handlePrevQuestion}>
           Prev
         </button>
-        <button onClick={handleNextQuestion} disabled={currentQuestionIndex === data.questions.length - 1 && selectedOptions[currentQuestionIndex].length === 0}>
+        <button onClick={handleNextQuestion} disabled={ selectedOptions[currentQuestionIndex].length === 0}>
           Next
         </button>
       </div>

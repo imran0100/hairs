@@ -14,7 +14,7 @@ const handleFileChange = (e) => {
 
   const uploadFiles = async ({setBanner}) => {
     setLoading(true)
-    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjIzMDc1YzBhMWM2OWFmMGNlNjJhOTQiLCJpYXQiOjE3MTU0NDEwODIsImV4cCI6MTcxNTcwMDI4Mn0.3Tdvm-XZNeo4SYFd-l6nGsICVExouce__GXRM9VrJEU";
+    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjIzMDc1YzBhMWM2OWFmMGNlNjJhOTQiLCJpYXQiOjE3MTU1NDEwOTMsImV4cCI6MTcxNTgwMDI5M30.HVQdT_y6vtTEmy-QoChIOUaMX4Ml2vJI9-C5vkHFawU";
 
 
 if(file){
@@ -117,7 +117,7 @@ useEffect(()=>setBanner("/assets/img/SELF-HAIR-ANALYSIS-TEST-female.jpg"),[])
             <input type="file" className="form-control" id="fileInput" name="file" accept="image/*" onChange={handleFileChange} />
           </div>
           <div id="errorMessages" style={{ color: 'red' }}>{error&&"Please select a image to upload"}</div>
-          <button type="button" className="btn btn-primary mt-4" onClick={uploadFiles} id="uploadButton">{loading?"Please Wait":"Upload Image"}</button>
+          <button disabled={loading} type="button" className="btn btn-primary mt-4" onClick={uploadFiles} id="uploadButton">{loading?"Please Wait":"Upload Image"}</button>
           {show&&<h2>Successfull</h2>}
         </form>
         <div id="thankYouText" style={{ display: 'none' }}>

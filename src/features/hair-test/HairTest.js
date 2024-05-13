@@ -20,7 +20,7 @@ export default function HairTest() {
     // Add more questions and options as needed
 ]);
   const [banner, setBanner] = useState('/assets/img/question/personal-profile-pic.png');
-  const [step, setStep] = useState(4);
+  const [step, setStep] = useState(1);
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");

@@ -85,10 +85,7 @@
 // }
 import React, { useState, useEffect } from 'react';
 
-export default function Stress({ nextStep,selectedOptions,setSelectedOptions, prevStep, setBanner, onSelectedOptionsChange }) {
- 
-  
-
+export default function Stress({ nextStep, selectedOptions, setSelectedOptions, prevStep, setBanner }) {
     useEffect(() => {
         setBanner("/assets/img/question/stress.png");
     }, []);
@@ -101,17 +98,17 @@ export default function Stress({ nextStep,selectedOptions,setSelectedOptions, pr
         prevStep();
     };
 
-    const checkFields_stressmanage = (event, index) => {
+    const handleOptionChange = (event, index) => {
         const { value } = event.target;
-        setSelectedOptions(prevState => {
-            const updatedOptions = [...prevState];
-            updatedOptions[index].option = value;
-            return updatedOptions;
+        const updatedOptions = selectedOptions.map((item, idx) => {
+            if (idx === index) {
+                return { ...item, option: value };
+            }
+            return item;
         });
+        setSelectedOptions(updatedOptions);
     };
-    
 
- 
     return (
         <div>
             <table className="table stress-table" id="stressManagementTable">
@@ -127,9 +124,36 @@ export default function Stress({ nextStep,selectedOptions,setSelectedOptions, pr
                     {selectedOptions.map((item, index) => (
                         <tr key={index}>
                             <td className="left-t">{item.ques}</td>
-                            <td><input className="form-check-input" onInput={(event) => checkFields_stressmanage(event, index)} type="radio" value="Not At All" name={`option_${index}`} checked={item.option === "Not At All"} /></td>
-                            <td><input className="form-check-input" onInput={(event) => checkFields_stressmanage(event, index)} type="radio" value="Sometimes" name={`option_${index}`} checked={item.option === "Sometimes"}/></td>
-                            <td><input className="form-check-input" onInput={(event) => checkFields_stressmanage(event, index)} type="radio" value="All the time" name={`option_${index}`} checked={item.option === "All the time"} /></td>
+                            <td>
+                                <input
+                                    className="form-check-input"
+                                    type="radio"
+                                    value="Not At All"
+                                    name={`option_${index}`}
+                                    checked={item.option === "Not At All"}
+                                    onChange={(event) => handleOptionChange(event, index)}
+                                />
+                            </td>
+                            <td>
+                                <input
+                                    className="form-check-input"
+                                    type="radio"
+                                    value="Sometimes"
+                                    name={`option_${index}`}
+                                    checked={item.option === "Sometimes"}
+                                    onChange={(event) => handleOptionChange(event, index)}
+                                />
+                            </td>
+                            <td>
+                                <input
+                                    className="form-check-input"
+                                    type="radio"
+                                    value="All the time"
+                                    name={`option_${index}`}
+                                    checked={item.option === "All the time"}
+                                    onChange={(event) => handleOptionChange(event, index)}
+                                />
+                            </td>
                         </tr>
                     ))}
                 </tbody>

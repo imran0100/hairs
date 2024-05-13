@@ -1,7 +1,7 @@
-import React from 'react'
+import React,{useEffect,useState}from 'react'
 import AdminNavbar from './AdminNavbar';
 import { useNavigate } from 'react-router-dom';
-
+import BASE_URL from '../../Config';
 const patientData = [
     {
       id: 1,
@@ -84,27 +84,79 @@ const patientData = [
       bloodPressure: '125/80 mmHg'
     }
   ];
-export default function AllHairTest() {
-  const navigate=useNavigate()
-  return (
-    <AdminNavbar>
-            <div className="all-patient-list-container">
-             
-                <div className="patient-list-1">
-                    {patientData.map(patient => (
-                        <div key={patient.id} className="patient-item2">
-                            <div className="patient-details">
-                                <h3>{patient.name}</h3>
-                                <p>{patient.address}</p>
-                                
-                            </div>
-                          <div>  <button onClick={()=>navigate('/test-result')} className="block-button1" >View Test Result</button>
-                          {/* <button  className="block-button edit1">Edit</button> */}
-                          </div>
-                        </div>
-                    ))}
+  export default function AllHairTest() {
+    const [data, setData] = useState([]);
+    const [selectedDoctors, setSelectedDoctors] = useState({});
+  
+    const handleDoctorSelect = (e, patientId) => {
+      const selectedDoctorName = e.target.value;
+      setSelectedDoctors(prevState => ({
+        ...prevState,
+        [patientId]: selectedDoctorName
+      }));
+    };
+  const handelAssign=(id)=>{
+    const dr=data.filter((item)=>item.fullname===selectedDoctors[id])
+    console.log(selectedDoctors[id],dr,'in assign');
+    localStorage.setItem("dr32", JSON.stringify(dr[0]));
+  }
+  console.log(selectedDoctors,'dr sekect');
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const response = await fetch(`${BASE_URL}/admin/alldoctor`, {
+            method: 'GET',
+            headers: {
+              'Authorization': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjIzYmU5MTg3ZjczZWM1YjNlMWRiZWMiLCJpYXQiOjE3MTU1Mjg0MDIsImV4cCI6MTcxNTc4NzYwMn0.3Mx2J3HE_SFByldn-q62ED_rebM6EF7b9LQqNXWeQpE",
+            
+              'Content-Type': 'application/json'
+            }
+          });
+  
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+  
+          const jsonData = await response.json();
+          setData(jsonData.data.data);
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+      };
+  
+      fetchData();
+    }, []);
+  
+    const navigate = useNavigate();
+  
+    return (
+      <AdminNavbar>
+        <div className="all-patient-list-container">
+          <div className="patient-list-1">
+            {patientData.map(patient => (
+              <div key={patient.id} className="patient-item2">
+                <div className="patient-details">
+                  <h3>{patient.name}</h3>
+                  <p>{patient.address}</p>
                 </div>
-            </div>
-        </AdminNavbar>
-  )
-}
+                <div>
+                  <button onClick={() => navigate('/test-result')} className="block-button1">View Test Result</button>
+                </div>
+                <div className='dr-select'>
+                  <label htmlFor={`doctor-${patient.id}`}>Select a Doctor:</label>
+                  <select id={`doctor-${patient.id}`} value={selectedDoctors[patient.id] || ''} onChange={(e) => handleDoctorSelect(e, patient.id)}>
+                    <option value="">Select</option>
+                    {data.map(doctor => (
+                      <option key={doctor._id} value={doctor.fullname}>{doctor.fullname}</option>
+                    ))}
+                  </select>
+                  {selectedDoctors[patient.id] && <button onClick={()=>handelAssign(patient.id)}>Assign</button>}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </AdminNavbar>
+    );
+  }
+  

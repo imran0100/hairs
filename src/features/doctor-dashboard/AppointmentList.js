@@ -17,10 +17,13 @@ const appointmentData = [
 ];
 
 function AppointmentList() {
+  let storedUserData = JSON.parse(localStorage.getItem("User343")) ;
+  let storedDrData = JSON.parse(localStorage.getItem("dr32")) ;
+console.log();
   const navigate=useNavigate()
   return (
     <DoctorNavbar>
-      <div className="appointment-container">
+     {storedDrData._id===storedUserData.logedInUser.user._id ? <div className="appointment-container">
         {appointmentData.map(appointment => (
           <div key={appointment.id} className="appointment-item">
             <div className="appointment-details">
@@ -36,7 +39,7 @@ function AppointmentList() {
 
           </div>
         ))}
-      </div>
+      </div>:<h3>No Appointments</h3>}
     </DoctorNavbar>
   );
 }
