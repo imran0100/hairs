@@ -740,7 +740,7 @@ console.log(data1,"api data")
         </div>
       ))}
     </div>
-  ))}</>:<p>wait</p>
+  ))}</>:<p>No data</p>
 }
 {
 selectedTab === 'uploadedImages' &&<div><img src={data1?.UploadedImage.imageUrl}/></div>
