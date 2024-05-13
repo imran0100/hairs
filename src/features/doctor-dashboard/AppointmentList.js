@@ -23,7 +23,7 @@ console.log();
   const navigate=useNavigate()
   return (
     <DoctorNavbar>
-     { storedDrData?._id===storedUserData?.logedInUser?.user?._id ? <div className="appointment-container">
+    {storedDrData||storedUserData? <>{ storedDrData?._id===storedUserData?.logedInUser?.user?._id ? <div className="appointment-container">
         {appointmentData.map(appointment => (
           <div key={appointment.id} className="appointment-item">
             <div className="appointment-details">
@@ -39,7 +39,7 @@ console.log();
 
           </div>
         ))}
-      </div>:<h3>No Appointments</h3>}
+      </div>:<h3>No Appointments</h3>}</>:<h3>No Appointments</h3>}
     </DoctorNavbar>
   );
 }
