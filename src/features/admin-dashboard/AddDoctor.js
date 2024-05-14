@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AdminNavbar from './AdminNavbar';
-
+import BASE_URL from '../../Config';
+import { toast } from 'react-toastify';
 
 export default function AddDoctor() {
     // State variables to store form data
@@ -10,13 +11,99 @@ export default function AddDoctor() {
     const [email, setEmail] = useState('');
     const [address, setAddress] = useState('');
     const [qualification, setQualification] = useState('');
-
+    const [loading, setLoading] = useState(false);
+   
+    
     // Function to handle form submission
-    const handleSubmit = (e) => {
+    const handleSubmit =async (e) => {
+        toast("test")
         e.preventDefault();
-        // Perform submission logic here
-        // You can send the form data to an API or handle it as needed
-        console.log('Form submitted:', { name, image, phone, email, address, qualification });
+       
+
+        setLoading(true);
+
+
+
+
+      
+            try {
+              const formData = new FormData();
+              formData.append('image', image);
+            
+              const response = await fetch(`${BASE_URL}/hair-tests/upload-image`, {
+                method: 'POST',
+              
+                body: formData
+              });
+            
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              } else {
+                const responseData = await response.json();
+                console.log(responseData);
+             
+                try {
+                    console.log(responseData.imageUrl)
+                    console.log({
+                        fullname:name,email, mobile:phone, speciality:qualification, location:address,description:'null',profileImage: responseData.imageUrl, coverImage:'cover'
+                     
+                     })
+                  const response = await fetch(`${BASE_URL}/admin/addDoctor`, {
+                    method: 'POST',
+                    headers: {
+                       
+                      'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        fullname:name,email, mobile:phone, speciality:qualification, location:address,description:'null',profileImage: responseData.imageUrl, coverImage:'cover'
+                    
+                    })
+                    
+                  });
+                 
+                  if (!response.ok) {
+                    
+                    toast.error('Some thing went wrong')
+                    // You can update state or display error messages accordingly
+                    return;
+                  }
+               
+                
+                 
+                  toast.success("Doctor Added Successfully and doctor's Credentials sent to email !");
+             setName('')
+             setEmail('')
+             setImage(null)
+             setPhone('')
+             setAddress('')
+             setQualification('')
+
+                  // Perform actions after successful login, such as updating state or redirecting
+                } catch (error) {
+                  toast.error('Network Error')
+              
+                } finally {
+                  setLoading(false); // Hide loader regardless of success or failure
+                }
+              
+                setLoading(false);
+              }
+            } catch (error) {
+                toast.error("Network error")
+              console.error('There was a problem with the fetch operation:', error.message);
+            }
+         
+          
+
+
+
+
+
+
+
+
+      
+
     };
 
     // Function to handle image upload
@@ -50,7 +137,7 @@ export default function AddDoctor() {
                     <label htmlFor="qualification">Qualification:</label>
                     <input type="text" id="qualification" value={qualification} onChange={(e) => setQualification(e.target.value)} required />
 
-                    <button type="submit">Submit</button>
+                    <button type="submit">{loading?"Please wait":"Submit"}</button>
                 </form>
             </div>
         </AdminNavbar>

@@ -19,7 +19,8 @@ import HairAnalysis from '../features/hair-analysis/HairAnalysis'
 // import Login from '../features/login/Login'
 // import SignUp from '../features/signup/SignUp'
 // import ProductPage from './ProductPage'
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function HomePage() {
 
   return (
@@ -41,7 +42,7 @@ function HomePage() {
         <Slider/>
         {/* <SignUp/> */}
         <Footer/>
-       
+       <ToastContainer/>
         {/* <Login/> */}
         {/* <WhyTrust/> */}
     </Navbar>

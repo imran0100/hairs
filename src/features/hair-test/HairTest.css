@@ -175,6 +175,55 @@ color: black;
 .h4{
   margin-bottom: 1rem;
 }
+.pcenter{
+  text-align:center;
+}
+.cardsw{
+  border: 1px solid rgb(33, 30, 30);
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+.checkout-detail{
+  border-top: 1px solid gray;
+  margin: 1rem 0 0 0;
+  padding-top: 1rem;
+}
+
+.slot{
+  display:flex;
+  gap:1rem;
+  
+}
+.react-datepicker-wrapper{
+  margin-bottom: 1rem;
+}
+.slot input{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.datecont{
+  display: flex;
+ gap: 2rem;
+}
+.cardsw svg{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgb(5, 73, 5);
+}
+.selected3{
+  background:#fbeded;
+ 
+}
+.collapsed{
+  display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.cardsw , .collapsed:hover{
+  cursor: pointer;
+}
 .specify-input{
   display: block;
   border-top: none;

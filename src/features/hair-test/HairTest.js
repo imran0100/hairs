@@ -7,7 +7,8 @@ import LifeStyle from './components/LifeStyle';
 import Stress from './components/Stress';
 import HairAndScalp from './components/HairAndScalp';
 import UploadImage from './components/UploadImage';
-
+import ThankYou from './components/ThankYou';
+import Checkout from './components/Checkout';
 export default function HairTest() {
   const [selectedOptions4, setSelectedOptions4] = useState([
     { ques: 'Physical exercise', option: '' },
@@ -20,7 +21,7 @@ export default function HairTest() {
     // Add more questions and options as needed
 ]);
   const [banner, setBanner] = useState('/assets/img/question/personal-profile-pic.png');
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(8);
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
@@ -145,6 +146,13 @@ setBanner={setBanner}      />;
 
         />;
         break;
+        case 7:
+          
+         stepContent= <ThankYou/>
+          break;
+          case 8:
+            stepContent=<Checkout/>
+            break;
     default:
       stepContent = null;
   }

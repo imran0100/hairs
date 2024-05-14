@@ -13,41 +13,7 @@
  
 //   const showLogin = useSelector((state) => state.login.showLogin);
 
-//   const validateForm = () => {
-//     let isValid = true;
-//     const newErrors = {};
 
-//     // Email validation
-//     if (loginMethod === "email") {
-//       if (!email) {
-//         isValid = false;
-//         newErrors.email = "Email is required";
-//       } else if (!/\S+@\S+\.\S+/.test(email)) {
-//         isValid = false;
-//         newErrors.email = "Email is invalid";
-//       }
-//     }
-
-//     // Phone validation
-//     if (loginMethod === "phone") {
-//       if (!phone) {
-//         isValid = false;
-//         newErrors.phone = "Phone number is required";
-//       } else if (!/^\d{10}$/.test(phone)) { // Validation for 10-digit phone number
-//         isValid = false;
-//         newErrors.phone = "Phone number must be 10 digits";
-//       }
-//     }
-
-//     // Password validation
-//     if (!password) {
-//       isValid = false;
-//       newErrors.password = "Password is required";
-//     }
-
-//     setErrors(newErrors);
-//     return isValid;
-//   };
 
 //   const handleSubmit = async (e) => {
     
@@ -168,7 +134,9 @@ import "./Login.css"; // Import the CSS file
 import { MdClose } from "react-icons/md";
 import { useSelector } from "react-redux";
 import BASE_URL from "../../Config";
-import { Hourglass } from 'react-loader-spinner';
+import { toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+// import { Hourglass } from 'react-loader-spinner';
 // import { useAlert } from 'react-alert'
 const Login = ({ onClose }) => {
   // const alert = useAlert()
@@ -183,13 +151,46 @@ const Login = ({ onClose }) => {
   const [loading, setLoading] = useState(false);
 
   const validateForm = () => {
-    // Validation logic remains the same as before
+    let isValid = true;
+    const newErrors = {};
+
+    // Email validation
+    if (loginMethod === "email") {
+      if (!email) {
+        isValid = false;
+        newErrors.email = "Email is required";
+      } else if (!/\S+@\S+\.\S+/.test(email)) {
+        isValid = false;
+        newErrors.email = "Email is invalid";
+      }
+    }
+
+    // Phone validation
+    if (loginMethod === "phone") {
+      if (!phone) {
+        isValid = false;
+        newErrors.phone = "Phone number is required";
+      } else if (!/^\d{10}$/.test(phone)) { // Validation for 10-digit phone number
+        isValid = false;
+        newErrors.phone = "Phone number must be 10 digits";
+      }
+    }
+
+    // Password validation
+    if (!password) {
+      isValid = false;
+      newErrors.password = "Password is required";
+    }
+
+    setErrors(newErrors);
+    return isValid;
   };
 
   const handleSubmit = async (e) => {
+   
     
     e.preventDefault();
-   
+   if(validateForm()){
     setLoading(true);
       try {
         const response = await fetch(`${BASE_URL}/users/login`, {
@@ -208,25 +209,25 @@ const Login = ({ onClose }) => {
         if (!response.ok) {
           // Handle non-successful responses here
           const errorData = await response.json();
-          console.error('Login failed:', errorData.message);
+          // console.error('Login failed:', errorData.message);
+          toast.error('Wrong Credentials')
           // You can update state or display error messages accordingly
           return;
         }
-  
-        // Login successful, handle response data
+     
         const userData = await response.json();
         console.log('Login successful:', userData.data);
         localStorage.setItem("User343", JSON.stringify(userData.data));
-        // alert.show('Login Successfull !')
+        toast.success("Login Successful !");
     onClose()
         // Perform actions after successful login, such as updating state or redirecting
       } catch (error) {
-        console.error('Error logging in:', error);
-        // Handle network errors or other unexpected errors
+        toast.error('Network Error')
+    
       } finally {
         setLoading(false); // Hide loader regardless of success or failure
       }
-  
+    }
   };
 
   const handleForgotPasswordSubmit = async (e) => {
@@ -252,8 +253,7 @@ if(response.ok){
   setShowUpdatePassword(true)
   setShowForgotPassword(false)
 }
-      // Reset password request successful
-      // Handle success scenario here, such as showing a success message or redirecting
+     
     } catch (error) {
       console.error('Error sending Forgot Password request:', error);
     }
@@ -389,6 +389,7 @@ if(response.ok){
           </div>
         </div>
       )}
+      {/* <ToastContainer /> */}
     </>
   );
 };

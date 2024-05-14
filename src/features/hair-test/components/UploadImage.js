@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BASE_URL from '../../../Config';
+import { toast } from 'react-toastify';
+
 const ScalpPopup = ({setBanner,male,name,email,phoneNumber,selectedOptionP,selectedOptions,selectedOptions1,selectedOptions4,selectedOptions3}) => {
   const [file, setFile] = useState(null);
 const [show,setShow]=useState(false)
@@ -59,10 +61,12 @@ if(file){
         });
       
         if (!response.ok) {
+          toast.error("Something Went wrong")
           throw new Error('Network response was not ok');
         }else{
           const responseData = await response.json();
           setShow(true)
+          toast.success("Successfull")
           console.log(responseData,'huhuhuh');
         }
       
@@ -76,6 +80,7 @@ if(file){
     console.error('There was a problem with the fetch operation:', error.message);
   }
 }else{
+  
   setError(true)
 }
 

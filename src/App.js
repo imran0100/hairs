@@ -30,7 +30,8 @@ import AddProduct from './features/admin-dashboard/AddProduct';
 import EditDeleteProduct from './features/products/EditDeleteProduct';
 import ManageOrder from './features/admin-dashboard/ManageOrder';
 import PatientTestResult from './features/doctor-dashboard/PatientTestResult';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   // const options = {
   //   // you can also just use 'bottom center'
@@ -78,7 +79,7 @@ function App() {
 
         </Routes>
       </Router>
-  
+  <ToastContainer/>
     </div>
    
   );
