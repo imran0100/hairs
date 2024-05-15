@@ -32,6 +32,7 @@ import ManageOrder from './features/admin-dashboard/ManageOrder';
 import PatientTestResult from './features/doctor-dashboard/PatientTestResult';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Success from './features/payment/Success';
 function App() {
   // const options = {
   //   // you can also just use 'bottom center'
@@ -69,8 +70,8 @@ function App() {
         <Route path="/add-product" element={<AddProduct />} />
         <Route path="/edit-delete-product" element={<EditDeleteProduct />} />
         <Route path="/manage-order" element={<ManageOrder />} />
-        <Route path="/test-result" element={<TestResults />} />
         <Route path="/patient-test-result" element={<PatientTestResult />} />
+        <Route path="/success" element={<Success />} />
 
 
 
