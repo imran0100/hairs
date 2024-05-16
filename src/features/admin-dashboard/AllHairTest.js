@@ -159,12 +159,12 @@ const patientData = [
             {patientData?.map(patient => (
               <div key={patient.id} className="patient-item2">
                 <div className="patient-details">
-                  <h3>{patient.userId.fullname}</h3>
-                  <p>{patient.paymentStatus}</p>
+                  <h3>Patient Name : {patient.userId.fullname}</h3>
+                 
+                <p>Payment Status : {patient.paymentStatus}</p>
                 </div>
-                <div>
-                  <button onClick={() => navigate('/test-result')} className="block-button1">View Test Result</button>
-                </div>
+                <p>Time Slot : {patient.timeSlot}</p>
+                <p>Appointment Date : {patient.appointmentDate?patient.appointmentDate:"Not Available"}</p>
                 <div className='dr-select'>
                   <label htmlFor={`doctor-${patient.id}`}>Select a Doctor:</label>
                   <select id={`doctor-${patient.id}`} value={selectedDoctors[patient.id] || ''} onChange={(e) => handleDoctorSelect(e, patient.id)}>

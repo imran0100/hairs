@@ -100,9 +100,10 @@
 }
 .patient-item2{
     flex: 0 0 auto;
-    width: 48%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     align-self: center;
     background: linear-gradient(#fff7f7, #d3b0b0);
     padding: 1rem;
@@ -174,8 +175,8 @@
   }
   .dr-select{
     text-align: end;
-    flex: auto;
-    width: 40%;
+   display: flex;
+   flex-direction: column;
    
   }
   .dr-select select{
