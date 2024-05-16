@@ -86,8 +86,30 @@ const patientData = [
   ];
   export default function AllHairTest() {
     const [data, setData] = useState([]);
+    const [patientData,setPatientData]=useState([])
     const [selectedDoctors, setSelectedDoctors] = useState({});
-  
+  const fetchAppointment=async()=>{
+    try {
+      const response = await fetch(`${BASE_URL}/admin/get-Booked-appointment`, {
+        method: 'GET',
+        headers: {
+          'Authorization': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjIzYmU5MTg3ZjczZWM1YjNlMWRiZWMiLCJpYXQiOjE3MTU4NDMzMDMsImV4cCI6MTcxNjEwMjUwM30.3D5kt-g3fV6NRnbXUkw2WgTIzZ8obY-TU8aD-q1q3zc",
+        
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const jsonData = await response.json();
+      setPatientData([jsonData.data]);
+      console.log(jsonData.data,"pathientData")
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  }
     const handleDoctorSelect = (e, patientId) => {
       const selectedDoctorName = e.target.value;
       setSelectedDoctors(prevState => ({
@@ -100,14 +122,15 @@ const patientData = [
     console.log(selectedDoctors[id],dr,'in assign');
     localStorage.setItem("dr32", JSON.stringify(dr[0]));
   }
-  console.log(selectedDoctors,'dr sekect');
+  console.log(data,'dr sekect');
     useEffect(() => {
+      fetchAppointment()
       const fetchData = async () => {
         try {
           const response = await fetch(`${BASE_URL}/admin/alldoctor`, {
             method: 'GET',
             headers: {
-              'Authorization': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjIzYmU5MTg3ZjczZWM1YjNlMWRiZWMiLCJpYXQiOjE3MTU1Mjg0MDIsImV4cCI6MTcxNTc4NzYwMn0.3Mx2J3HE_SFByldn-q62ED_rebM6EF7b9LQqNXWeQpE",
+              'Authorization': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjIzYmU5MTg3ZjczZWM1YjNlMWRiZWMiLCJpYXQiOjE3MTU4NDMzMDMsImV4cCI6MTcxNjEwMjUwM30.3D5kt-g3fV6NRnbXUkw2WgTIzZ8obY-TU8aD-q1q3zc",
             
               'Content-Type': 'application/json'
             }
@@ -133,11 +156,11 @@ const patientData = [
       <AdminNavbar>
         <div className="all-patient-list-container">
           <div className="patient-list-1">
-            {patientData.map(patient => (
+            {patientData?.map(patient => (
               <div key={patient.id} className="patient-item2">
                 <div className="patient-details">
-                  <h3>{patient.name}</h3>
-                  <p>{patient.address}</p>
+                  <h3>{patient.userId.fullname}</h3>
+                  <p>{patient.paymentStatus}</p>
                 </div>
                 <div>
                   <button onClick={() => navigate('/test-result')} className="block-button1">View Test Result</button>

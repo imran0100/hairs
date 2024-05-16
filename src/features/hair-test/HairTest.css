@@ -216,6 +216,36 @@ color: black;
   background:#fbeded;
  
 }
+.readmore{
+  border-top: 1px solid gray;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  color: #0494c0;
+}
+.readmore span{
+  text-decoration: underline;
+}
+.readmore span:hover{
+  color:black;
+}
+.red-option{
+  margin-left: 10%;
+  
+}
+.red-option p{
+  margin-top: .5rem;
+  font-size: 1rem;
+  margin-left: 12%;
+  
+}
+.red-option :last-child{
+  margin-bottom: 1rem;
+}
+.h5-tem h5{
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
 .collapsed{
   display: flex;
     gap: 1rem;
