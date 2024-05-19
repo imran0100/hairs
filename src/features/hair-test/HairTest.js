@@ -9,6 +9,7 @@ import HairAndScalp from './components/HairAndScalp';
 import UploadImage from './components/UploadImage';
 import ThankYou from './components/ThankYou';
 import Checkout from './components/Checkout';
+import { useNavigate } from 'react-router-dom';
 export default function HairTest() {
   const [selectedOptions4, setSelectedOptions4] = useState([
     { ques: 'Physical exercise', option: '' },
@@ -46,10 +47,14 @@ export default function HairTest() {
   // const [selectedSubOption1, setSelectedSubOption1] = useState(null);
   const [showSubQuestions, setShowSubQuestions] = useState(false);
   const [showSubQuestions1, setShowSubQuestions1] = useState(false);
+ 
 console.log(selectedOptions4,'Stress')
 console.log(selectedOptionP,'fiajsoijasoijfoasij');
   const nextStep = () => setStep(step + 1);
   const prevStep = () => setStep(step - 1);
+
+  let storedUserData = JSON.parse(localStorage.getItem("User343"));
+
 
   let stepContent;
 

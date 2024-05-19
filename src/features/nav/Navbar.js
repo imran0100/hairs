@@ -25,10 +25,13 @@ const navigate=useNavigate();
   const handleLoginClick = () => {
     dispatch(toggleLogin());
   };
+  const handleTestHair=()=>{
+    storedUserData?navigate('/hair-test'):handleLoginClick()
+  }
   const handleSignupClick = () => {
     setShowSignup(!showSignup);
   };
-  let storedUserData = localStorage.getItem("User343");
+  let storedUserData = JSON.parse(localStorage.getItem("User343"));
   return (
     <>
       <div className="nav-container container">
@@ -72,7 +75,7 @@ const navigate=useNavigate();
           </a>
         </div>
         <div className="nav-right">
-         {!location.pathname.includes("/hair-test")&& <button onClick={()=>navigate('/hair-test')} className="btn-test">TAKE HAIR TEST</button>}
+         {!location.pathname.includes("/hair-test")&& <button onClick={handleTestHair} className="btn-test">TAKE HAIR TEST</button>}
           <div className="nav-icons">
             <div className="user-svg">
               {showSearch ? (

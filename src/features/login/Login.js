@@ -134,7 +134,9 @@ import "./Login.css"; // Import the CSS file
 import { MdClose } from "react-icons/md";
 import { useSelector } from "react-redux";
 import BASE_URL from "../../Config";
+import { toggleLogin } from "./LoginSlice";
 import { toast } from 'react-toastify';
+import { Navigate, useNavigate } from "react-router-dom";
 // import 'react-toastify/dist/ReactToastify.css';
 // import { Hourglass } from 'react-loader-spinner';
 // import { useAlert } from 'react-alert'
@@ -150,6 +152,7 @@ const Login = ({ onClose }) => {
   const showLogin = useSelector((state) => state.login.showLogin);
   const [loading, setLoading] = useState(false);
 
+  const navigate =useNavigate()
   const validateForm = () => {
     let isValid = true;
     const newErrors = {};
@@ -218,6 +221,11 @@ const Login = ({ onClose }) => {
         const userData = await response.json();
         console.log('Login successful:', userData.data);
         localStorage.setItem("User343", JSON.stringify(userData.data));
+        if(userData.data.logedInUser.role==='doctor'){
+          navigate('/doctor-dashboard')
+        }else if(userData.data.logedInUser.role==='admin'){
+          navigate('/admin-dashboard')
+        }
         toast.success("Login Successful !");
     onClose()
         // Perform actions after successful login, such as updating state or redirecting

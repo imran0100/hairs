@@ -6,7 +6,7 @@ export default function DoctorNavbar({children}) {
     <>
     <div className="nav-container container">
       <div>
-        <img alt='hair'
+        <img 
           alt="logo"
           className="nav-logo"
           src="/assets/img/logo.png"
@@ -27,7 +27,7 @@ export default function DoctorNavbar({children}) {
        <NavLink to={'/appointment'}>Profile</NavLink>
       
        <NavLink to={'/appointment'}>Appointment</NavLink>
-       <NavLink to={'/appointment'}>Prescription Generator</NavLink>
+       <NavLink to={'/analysis'}>Prescription Generator</NavLink>
 
       </div>
       <div className="right-column">
