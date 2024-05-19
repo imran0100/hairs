@@ -329,7 +329,7 @@ if(response.ok){
   </div>): (
         <div className={`overlay-login ${showLogin ? 'open' : ''}`}>
           <div className="popup-login">
-            <button className="close-btn-login" onClick={() => onClose()}>
+            <button className="close-btn-login" onClick={() => onClose?onClose():navigate('/')}>
               <MdClose size={15} />
             </button>
             <div className="login-tabs">
